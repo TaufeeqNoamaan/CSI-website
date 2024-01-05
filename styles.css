@@ -13,7 +13,7 @@ body {
 * {
   scroll-behavior: smooth;
 }
-.title{
+.title {
   font-size: 40px;
   color: #fff;
   font-weight: 700;
@@ -149,27 +149,25 @@ nav li {
 }
 #about {
   border-radius: 5px;
-  box-shadow: 0px 1px 2px rgb(149, 4, 3,0.5),
-    0px 2px 4px rgb(149, 4, 3,0.5), 0px 4px 8px rgb(149, 4, 3,0.5),
-    0px 8px 16px rgb(149, 4, 3,0.5);
+  box-shadow: 0px 1px 2px rgb(149, 4, 3, 0.5), 0px 2px 4px rgb(149, 4, 3, 0.5),
+    0px 4px 8px rgb(149, 4, 3, 0.5), 0px 8px 16px rgb(149, 4, 3, 0.5);
 }
 #about:hover {
-  box-shadow: 0px 2px 4px rgb(149, 4, 3,0.7),
-    0px 4px 8px rgb(149, 4, 3,0.7), 0px 8px 16px rgb(149, 4, 3,0.7),
-    0px 12px 24px rgb(149, 4, 3,0.7);
+  box-shadow: 0px 2px 4px rgb(149, 4, 3, 0.7), 0px 4px 8px rgb(149, 4, 3, 0.7),
+    0px 8px 16px rgb(149, 4, 3, 0.7), 0px 12px 24px rgb(149, 4, 3, 0.7);
   transform: translateY(-10px);
   transition: 0.2s;
 }
-#about p{
+#about p {
   color: lightgray;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
 }
-#about .container{
+#about .container {
   padding: 0 70px;
 }
-#about .follow-us{
+#about .follow-us {
   margin-top: 0;
   text-decoration: underline;
 }
@@ -198,7 +196,6 @@ nav li {
   transform: translateY(-5px); /* Added this line for the hover effect */
 }
 
-
 /*==================FACULTY==============================  */
 #leadership {
   background-color: #101114;
@@ -207,20 +204,17 @@ nav li {
   width: 60%;
   margin: 50px auto;
 }
-#leadership{
+#leadership {
   border-radius: 5px;
-  box-shadow: 0px 1px 2px rgb(149, 4, 3,0.5),
-    0px 2px 4px rgb(149, 4, 3,0.5), 0px 4px 8px rgb(149, 4, 3,0.5),
-    0px 8px 16px rgb(149, 4, 3,0.5);
+  box-shadow: 0px 1px 2px rgb(149, 4, 3, 0.5), 0px 2px 4px rgb(149, 4, 3, 0.5),
+    0px 4px 8px rgb(149, 4, 3, 0.5), 0px 8px 16px rgb(149, 4, 3, 0.5);
 }
 #leadership:hover {
-  box-shadow: 0px 2px 4px rgb(149, 4, 3,0.7),
-    0px 4px 8px rgb(149, 4, 3,0.7), 0px 8px 16px rgb(149, 4, 3,0.7),
-    0px 12px 24px rgb(149, 4, 3,0.7);
+  box-shadow: 0px 2px 4px rgb(149, 4, 3, 0.7), 0px 4px 8px rgb(149, 4, 3, 0.7),
+    0px 8px 16px rgb(149, 4, 3, 0.7), 0px 12px 24px rgb(149, 4, 3, 0.7);
   transform: translateY(-10px);
   transition: 0.2s;
 }
-
 
 .faculty-coordinator {
   display: flex;
@@ -251,7 +245,6 @@ nav li {
   font-size: 16px;
   color: #ddd;
 }
-
 
 /* ==========TEAM==================== */
 
@@ -340,6 +333,7 @@ nav li {
   background: url("./assets/backgrounds/bg.svg") center/cover no-repeat;
   text-align: center;
   padding: 50px 0;
+  height: 100vh;
 }
 /* BECOME A MEMBER ANIMATION */
 #home a{
