@@ -521,3 +521,13 @@ nav li {
     }
 }
 /* BECOME A MEMBER ANIMATION END*/
+
+
+#home{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background:linear-gradient(to bottom,rgb(22, 22, 22),rgb(61, 47, 47,0.375))
+  , url("./assets/bg.jpg") center center fixed;
+  background-size:cover;
+}
