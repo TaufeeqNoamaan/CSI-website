@@ -43,6 +43,7 @@ nav a {
 .nav-links a:hover {
   text-decoration: underline;
   text-underline-offset: 0.7rem;
+  color: #950403;
 }
 
 @media (max-width: 768px) {
@@ -334,111 +335,112 @@ nav li {
   padding: 50px 0;
   height: 100vh;
 }
-
 /* BECOME A MEMBER ANIMATION */
-#home a {
+#home a{
   text-decoration: none;
   color: white;
+  font-weight: 700;
 }
 #home button {
-  position: relative;
-  background: white;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
-  padding: 1rem 3rem;
-  transition: 0.2s;
+    position: relative;
+    background: white;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
 }
 
 #home button:hover {
-  letter-spacing: 0.2rem;
-  padding: 1.1rem 3.1rem;
-  background: white;
-  color: white;
-  animation: box 3s infinite;
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    animation: box 3s infinite;
 }
 
 #home button::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  background: #7f0706;
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background:#7f0706;
 }
 
 #home button span {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 #home button i {
-  position: absolute;
-  inset: 0;
-  display: block;
+    position: absolute;
+    inset: 0;
+    display: block;
 }
 
 #home button i::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 2px;
-  left: 80%;
-  top: -2px;
-  border: 2px solid var(--clr);
-  transition: 0.2s;
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
 }
 
-button:hover i::before {
-  width: 15px;
-  left: 20%;
-  animation: move 3s infinite;
+#home button:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
 }
 
-button i::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 2px;
-  left: 20%;
-  bottom: -2px;
-  border: 2px solid var(--clr);
-  background: white;
-  transition: 0.2s;
+#home button i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
 }
 
-button:hover i::after {
-  width: 15px;
-  left: 80%;
-  animation: move 3s infinite;
+#home button:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
 }
 
 @keyframes move {
-  0% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(0);
+    }
 
-  50% {
-    transform: translateX(5px);
-  }
+    50% {
+        transform: translateX(5px);
+    }
 
-  100% {
-    transform: translateX(0);
-  }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @keyframes box {
-  0% {
-    box-shadow: #27272c;
-  }
+    0% {
+        box-shadow: #27272c;
+    }
 
-  50% {
-    box-shadow: 0 0 25px var(--clr);
-  }
+    50% {
+        box-shadow: 0 0 25px var(--clr);
+    }
 
-  100% {
-    box-shadow: #27272c;
-  }
+    100% {
+        box-shadow: #27272c;
+    }
 }
-/* END OF BECOME A MEMBER ANIMATION */
+/* BECOME A MEMBER ANIMATION END*/
