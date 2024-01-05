@@ -13,7 +13,7 @@ body {
 * {
   scroll-behavior: smooth;
 }
-.title {
+.title{
   font-size: 40px;
   color: #fff;
   font-weight: 700;
@@ -141,7 +141,8 @@ nav li {
 }
 /* =================ABOUT============================= */
 #about {
-  background-color: #101114;
+  /* background-color: #101114; */
+  background-image: linear-gradient( #737373,#101114);
   opacity: 0.9;
   border-radius: 2rem;
   width: 60%;
@@ -149,25 +150,27 @@ nav li {
 }
 #about {
   border-radius: 5px;
-  box-shadow: 0px 1px 2px rgb(149, 4, 3, 0.5), 0px 2px 4px rgb(149, 4, 3, 0.5),
-    0px 4px 8px rgb(149, 4, 3, 0.5), 0px 8px 16px rgb(149, 4, 3, 0.5);
+  box-shadow: 0px 1px 2px rgb(149, 4, 3,0.5),
+    0px 2px 4px rgb(149, 4, 3,0.5), 0px 4px 8px rgb(149, 4, 3,0.5),
+    0px 8px 16px rgb(149, 4, 3,0.5);
 }
 #about:hover {
-  box-shadow: 0px 2px 4px rgb(149, 4, 3, 0.7), 0px 4px 8px rgb(149, 4, 3, 0.7),
-    0px 8px 16px rgb(149, 4, 3, 0.7), 0px 12px 24px rgb(149, 4, 3, 0.7);
+  box-shadow: 0px 2px 4px rgb(149, 4, 3,0.7),
+    0px 4px 8px rgb(149, 4, 3,0.7), 0px 8px 16px rgb(149, 4, 3,0.7),
+    0px 12px 24px rgb(149, 4, 3,0.7);
   transform: translateY(-10px);
   transition: 0.2s;
 }
-#about p {
+#about p{
   color: lightgray;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
 }
-#about .container {
+#about .container{
   padding: 0 70px;
 }
-#about .follow-us {
+#about .follow-us{
   margin-top: 0;
   text-decoration: underline;
 }
@@ -196,25 +199,30 @@ nav li {
   transform: translateY(-5px); /* Added this line for the hover effect */
 }
 
+
 /*==================FACULTY==============================  */
 #leadership {
-  background-color: #101114;
+  /* background-color: #101114; */
+  background-image: linear-gradient( #737373,#101114);
   opacity: 0.9;
   border-radius: 2rem;
   width: 60%;
   margin: 50px auto;
 }
-#leadership {
+#leadership{
   border-radius: 5px;
-  box-shadow: 0px 1px 2px rgb(149, 4, 3, 0.5), 0px 2px 4px rgb(149, 4, 3, 0.5),
-    0px 4px 8px rgb(149, 4, 3, 0.5), 0px 8px 16px rgb(149, 4, 3, 0.5);
+  box-shadow: 0px 1px 2px rgb(149, 4, 3,0.5),
+    0px 2px 4px rgb(149, 4, 3,0.5), 0px 4px 8px rgb(149, 4, 3,0.5),
+    0px 8px 16px rgb(149, 4, 3,0.5);
 }
 #leadership:hover {
-  box-shadow: 0px 2px 4px rgb(149, 4, 3, 0.7), 0px 4px 8px rgb(149, 4, 3, 0.7),
-    0px 8px 16px rgb(149, 4, 3, 0.7), 0px 12px 24px rgb(149, 4, 3, 0.7);
+  box-shadow: 0px 2px 4px rgb(149, 4, 3,0.7),
+    0px 4px 8px rgb(149, 4, 3,0.7), 0px 8px 16px rgb(149, 4, 3,0.7),
+    0px 12px 24px rgb(149, 4, 3,0.7);
   transform: translateY(-10px);
   transition: 0.2s;
 }
+
 
 .faculty-coordinator {
   display: flex;
@@ -246,72 +254,132 @@ nav li {
   color: #ddd;
 }
 
+
 /* ==========TEAM==================== */
-
-#team {
-  width: 100vw;
-  height: 100vh;
+#team{
+  width: 100%;
+}
+.team-content .title{
+  line-height: 1.9;
+}
+.team-content .name{
+  width: 100%;
+}
+#team .row{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #666;
+  gap: 4rem;
+}
+.our-team {
+  padding: 40px;
+  margin-bottom: 30px;
+  /* background-color: #101114; */
+  background-image: linear-gradient( #737373,#101114);
   text-align: center;
   overflow: hidden;
-  padding: 50px 0;
+  position: relative;
+  width: 70%;
+  box-shadow: 0px 1px 2px rgb(149, 4, 3,0.5),
+    0px 2px 4px rgb(149, 4, 3,0.5), 0px 4px 8px rgb(149, 4, 3,0.5),
+    0px 8px 16px rgb(149, 4, 3,0.5);
 }
 
-#team h2 {
-  font-size: 28px;
-  color: #fff;
-  margin-bottom: 10px;
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
 }
 
-#team p {
-  font-size: 16px;
-  color: #ddd;
-  margin-bottom: 30px;
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #7f0706;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
 }
 
-#team {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #666;
-  text-align: center;
-  overflow: hidden;
-  padding: 50px 0;
+.our-team:hover .picture::before {
+  height: 100%;
 }
 
-#team h2 {
-  font-size: 28px;
-  color: #fff;
-  margin-bottom: 10px;
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #7f0706;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-#team p {
-  font-size: 16px;
-  color: #ddd;
-  margin-bottom: 30px;
+.our-team .picture img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
 }
 
-.collage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
 }
 
-.collage img {
-  width: 325px;
-  height: 375px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 5px;
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
 }
 
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #7f0706;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #7f0706;
+  background-color: #f7f5ec;
+}
+
+
+/* ============EVENTS================ */
 #events {
   display: flex;
   overflow: hidden;
@@ -333,7 +401,6 @@ nav li {
   background: url("./assets/backgrounds/bg.svg") center/cover no-repeat;
   text-align: center;
   padding: 50px 0;
-  height: 100vh;
 }
 /* BECOME A MEMBER ANIMATION */
 #home a{
